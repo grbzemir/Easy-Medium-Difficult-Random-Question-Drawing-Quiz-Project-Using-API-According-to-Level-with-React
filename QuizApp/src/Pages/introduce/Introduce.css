@@ -1,0 +1,82 @@
+.introduce {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(135deg, black, black);
+    /* Açılı bir degrade ile arka plan */
+    background-size: cover;
+    /* Arka planın tüm ekranı kaplamasını sağlar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* Küçük ekranlar için biraz iç boşluk ekleyelim */
+    box-sizing: border-box;
+    /* Padding hesaplamasında hatayı önlemek için */
+}
+
+.introduce-container {
+    width: 100%;
+    max-width: 400px;
+    /* Maksimum genişlik ayarlayarak daha dar ekranlara uyum sağladık */
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    /* Hafif bir sınır ekleyerek kartın ayırt ediciliğini artırdık */
+    border-radius: 12px;
+    /* Köşeleri biraz daha yuvarlattık */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Daha belirgin bir gölge efekti */
+}
+
+.introduce-container img {
+    width: 80%;
+    /* Resmin genişliğini ayarlayarak daha uyumlu hale getirdik */
+    max-width: 300px;
+    /* Büyük ekranlar için maksimum genişlik */
+    margin-bottom: 1.5rem;
+    /* Resmin altına boşluk ekleyerek içerik arası mesafeyi artırdık */
+}
+
+.introduce-btn {
+    width: 100%;
+    max-width: 350px;
+    height: 50px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    /* Butonun üstüne daha fazla boşluk ekledik */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Geçiş efekti ile butona animasyon ekledik */
+}
+
+.introduce-btn:hover {
+    background-color: black;
+    /* Hover durumunda buton rengini değiştirdik */
+    transform: translateY(-2px);
+    /* Hover durumunda butonu biraz yukarı kaldırarak etkileşim ekledik */
+}
+
+@media (max-width: 768px) {
+    .introduce-container {
+        padding: 1.5rem;
+        /* Mobil cihazlarda padding'i biraz azalttık */
+    }
+
+    .introduce-btn {
+        font-size: 16px;
+        /* Küçük ekranlarda yazı boyutunu biraz küçülttük */
+        height: 45px;
+        /* Buton yüksekliğini küçülttük */
+    }
+}

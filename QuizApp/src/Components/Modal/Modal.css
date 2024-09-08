@@ -1,0 +1,34 @@
+/* Modal.css */
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000;
+}
+
+.modal-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #621BE7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-btn:hover {
+    background-color: #4b14b3;
+}
+
+.modal-btn:active {
+    background-color: #3a1092;
+}

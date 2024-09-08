@@ -1,0 +1,92 @@
+.questionCard {
+    max-width: 700px;
+    width: 100%;
+    padding: 20px;
+    background-color: #2c3e50;
+    /* Koyu bir arka plan rengi */
+    border-radius: 10px;
+    /* Hafif köşeleri yuvarlatılmış */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Hafif bir gölge efekti */
+    margin: auto;
+}
+
+.questionCard-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* Daha geniş bir boşluk */
+    color: #ecf0f1;
+    /* Açık gri metin rengi */
+    text-align: center;
+    /* Ortalanmış metin */
+    line-height: 1.5;
+    /* Okunabilirliği artırmak için satır yüksekliği */
+}
+
+.questionCard button {
+    width: 48%;
+    margin: 10px 1%;
+    /* Düğmeler arasında daha fazla boşluk */
+    padding: 10px;
+    /* Düğmelerin içine boşluk ekleyerek daha büyük hale getirmek */
+    background-color: #ecf0f1;
+    /* Düğme arka plan rengi */
+    border: 2px solid #34495e;
+    /* Daha koyu bir sınır rengi */
+    border-radius: 8px;
+    /* Daha yuvarlak köşeler */
+    font-size: 18px;
+    /* Biraz daha büyük yazı */
+    font-weight: bold;
+    /* Düğme metni kalın */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Geçiş efekti */
+}
+
+.questionCard button:hover {
+    background-color: #34495e;
+    /* Düğme üzerinde koyu arka plan rengi */
+    color: #ecf0f1;
+    /* Düğme üzerinde açık metin rengi */
+}
+
+.questionCard-timer {
+    width: 60px;
+    height: 60px;
+    font-size: 26px;
+    font-weight: bold;
+    background-color: #e74c3c;
+    /* Kırmızı bir arka plan rengi */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+    /* Ortalanmış ve daha geniş bir alt boşluk */
+}
+
+@media (max-width: 768px) {
+    .questionCard {
+        padding: 15px;
+    }
+
+    .questionCard-title {
+        font-size: 20px;
+    }
+
+    .questionCard button {
+        width: 100%;
+        /* Mobilde tam genişlik */
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .questionCard-timer {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+}
